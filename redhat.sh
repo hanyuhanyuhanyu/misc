@@ -5,8 +5,8 @@ source ~/.bashrc
 nvm install 10.11.0
 mkdir node_dir
 pushd node_dir
-npm install express
-npm install express-generator
+npm install express -g
+npm install express-generator -g
 express auto_test
 popd
 pushd node_dir/auto_test
