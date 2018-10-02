@@ -1,6 +1,7 @@
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 call cinst nvm -y
 call nvm install 10.11.0
+call nvm use 10.11.0
 cd %USERPROFILE%
 mkdir node_dir
 cd node_dir
